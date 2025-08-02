@@ -1,13 +1,14 @@
 # No Docker Required: Understanding Containers the Linux Way  
 
+The book can also be accessed through [a static website](https://interwebshack.github.io/no-docker-required).
 
 ## Build the Book
 ```bash
-poetry run jupyter-book build no_docker_required/ --path-output docs
+poetry run jupyter-book build no_docker_required/ --path-output docs --builder html
 ```
-Output will go to `no_docker_required/_build/html`. You can preview with:
+Output will go to the `docs` folder. You can preview with:
 ```bash
-cd no_docker_required/_build/html
+cd docs
 poetry run python -m http.server
 ```
 ## Keep `docs/` tracked in Git:  
@@ -26,7 +27,7 @@ Then:
   * **Branch**: `main`  
   * **Folder**: `/docs`  
 3. GitHub will serve your site from:  
-  `https://interwebshack.github.io/no-docker-required/`  
+  `https://interwebshack.github.io/no-docker-required`  
 
 
 ## Getting Setup
