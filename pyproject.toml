@@ -1,0 +1,21 @@
+[project]
+name = "no-docker-required"
+version = "0.1.0"
+description = "No Docker Required: Understanding Containers the Linux Way"
+authors = [
+    {name = "joey-huckabee",email = "138994589+joey-huckabee@users.noreply.github.com"}
+]
+license = {text = "CC BY 4.0"}
+readme = "README.md"
+packages = [{ include = "no_docker_required" }]
+requires-python = ">=3.10"
+dependencies = [
+    "jupyter-book (>=1.0.4.post1,<2.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "numpy (==2.2.6)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
