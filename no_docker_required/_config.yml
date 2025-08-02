@@ -12,7 +12,7 @@ description: >
 
 # Information about where the book exists on the web
 repository:
-  url: https://interwebshack.github.io/no-docker-required  # 👈 GitHub repo, not Pages URL
+  url: https://github.com/interwebshack/no-docker-required # 👈 GitHub repo, not Pages URL
   path_to_book: no_docker_required                         # 👈 Where your book source files are
   branch: main                                             # 👈 Branch to use for source links
 
@@ -25,11 +25,11 @@ html:
   baseurl: https://interwebshack.github.io/no-docker-required/  # 👈 Required for GitHub Pages to work
 
 # Launch buttons (optional — can add Binder/Codespaces later)
-launch_buttons:
-  binderhub_url: null
-  colab_url: null
-  notebook_interface: classic
-  thebe: false
+# launch_buttons:
+#   binderhub_url: null
+#   colab_url: null
+#   notebook_interface: classic
+#   thebe: false
 
 # Jupyter Book advanced settings
 parse:
