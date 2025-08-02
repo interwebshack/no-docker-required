@@ -1,9 +1,56 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
+title: "No Docker Required: Understanding Containers the Linux Way"
+author: "Joey Huckabee"
 logo: logo.png
+
+# Short description for SEO or tooltips
+description: >
+  A practical technical guide to Linux container internals using kernel features
+  like namespaces, cgroups, and mount propagation — no Docker required.
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/interwebshack/no-docker-required # 👈 GitHub repo, not Pages URL
+  path_to_book: no_docker_required                         # 👈 Where your book source files are
+  branch: main                                             # 👈 Branch to use for source links
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  baseurl: https://interwebshack.github.io/no-docker-required/  # 👈 Required for GitHub Pages to work
+
+# Launch buttons (optional — can add Binder/Codespaces later)
+# launch_buttons:
+#   binderhub_url: null
+#   colab_url: null
+#   notebook_interface: classic
+#   thebe: false
+
+# Jupyter Book advanced settings
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - html_admonition
+    - html_image
+    - linkify
+    - substitution
+    - tasklist
+
+# Add extra static files or custom CSS
+extra_css: []
+extra_javascript: []
+
+# Hide unnecessary parts of the site (like Sphinx source links)
+sphinx:
+  config:
+    html_show_copyright: false
+    html_last_updated_fmt: '%b %d, %Y'
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -18,15 +65,3 @@ latex:
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
-
-# Information about where the book exists on the web
-repository:
-  url: https://github.com/interwebshack/no-docker-required  # Online location of your book
-  path_to_book: no_docker_required  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
-
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-html:
-  use_issues_button: true
-  use_repository_button: true
