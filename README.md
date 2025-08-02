@@ -4,7 +4,12 @@ The book can also be accessed through [a static website](https://interwebshack.g
 
 ## Build the Book
 ```bash
+# Build the book
 poetry run jupyter-book build no_docker_required/ --path-output docs --builder html
+# Move all built HTML files into docs/
+mv docs/_build/html/* docs/
+# Remove the empty _build directory tree
+rm -rf docs/_build/
 ```
 Output will go to the `docs` folder. You can preview with:
 ```bash
